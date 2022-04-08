@@ -1,0 +1,15 @@
+{
+	"name": "fold-array",
+	"version": "1.0.0",
+	"description": "​ This function folds an array in the middle `n` number of times. ​ If the list has a odd length, then fold on the middle index (the middle number therefore won't change) other wise you fold in the 'gap' between the two middle integers and so all integers are folded. ​ To 'fold' the numbers just add them together. ​ For example: ​",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"jest": "^27.5.1"
+	}
+}

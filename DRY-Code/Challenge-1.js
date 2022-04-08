@@ -21,22 +21,18 @@ console.log('\n\n--**--**--**--');
 console.log('---Refactor---');
 console.log('--**--**--**--\n\n');
 
-function rePrintBalance(account) {
-	function penniesToPounds(num) {
-		if (num < 0) {
-			return Math.abs(num / 100).toFixed(2) + '-';
-		}
-		return (num / 100).toFixed(2);
+function penniesToPounds(num) {
+	if (num < 0) {
+		return Math.abs(num / 100).toFixed(2) + '-';
 	}
-
+	return (num / 100).toFixed(2);
+}
+function rePrintBalance({ debits, credits, fees, balance }) {
 	console.log(
-		`Debits:    ${penniesToPounds(
-			account.debits
-		)}\nCredits:   ${penniesToPounds(
-			account.credits
-		)}\nFees:      ${penniesToPounds(
-			account.fees
-		)}\n      -----\nBalance:   ${penniesToPounds(account.balance)} `
+		`Debits:    ${penniesToPounds(debits)}\nCredits:   ${penniesToPounds(
+			credits
+		)}\nFees:      ${penniesToPounds(fees)}
+		\n      -----\nBalance:   ${penniesToPounds(balance)} `
 	);
 }
 rePrintBalance({ debits: 100, credits: 100, fees: -300, balance: 20 });

@@ -4,7 +4,8 @@ export default reposeRecord;
 
 //While I have some idea of what this kata requires, I truly do not know where best to even start - psudo break down below, real break down to follow!
 
-//Time stamps may not be in order, functionality is needed to return date stamps and tags in chronological order
+//1 - Time stamps may not be in order, functionality is needed to return date stamps and tags in chronological order
+//
 
 //Convert time stamp data into a more readable array
 
